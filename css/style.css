@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+* { box-sizing: border-box; margin: 0;   padding: 0; }
+
+p{ margin: 12px 0; font-family: Candara; font-size: 1em; }
+
+h1, h2 {padding: 16px 0; font-family: Piedra}
+
+ul{padding-left: 40px; padding-bottom: 24px}
+
+.container{max-width: 1280px; margin: 0 auto;padding:10px;}
+
+.parallax{
+  background-image: url('http://lambert.kwst.net/site/images/bg/14.jpg');
+  height: 550px;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.496);
+  height: 550px;
+  width:100%;
+}
+
+
+
+/* Menu de Midias Sociais */
+.social{
+  /* background-color: black; */
+  text-align: right;
+  padding-top:20px;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-pinterest{
+  color: white;
+}
+
+.logo{
+  /* background-color: black; */
+}
+
+/* Header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+}
+
+/* Menu */
+.menu a{
+  font-family: Vidaloka;
+  color: white;
+  text-decoration: none;
+  padding-left: 22px
+}
+
+.menu a:hover{
+  color: #C59D5F;
+}
+
+.menu .active{
+  color: #C59D5F;
+}
+.menu .active::after{
+  content:"•";
+  color:white;
+}
+.menu .active::before{
+  content:"•";
+  color:white;
+}
+::selection{
+  background: green;
+}
+.triangle-decor{
+top: -7px;
+position: relative;
+}
+.titulo-bg{
+  /*background-color:aquamarine;*/
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  height:75%;
+}
+.titulo-bg h2{
+color:white;
+font-family:"Source Sans Pro";
+font-size: 44px
+letter-spacing: 3px;
+}
+.titulo-bg h3{
+  color: bisque;
+  font-family: "playball";
+  font-size: 30px;
+  font-weight:200;
+}
+.galeria{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) ;
+ gap:5px;
+}
+.img-item img{
+  max-width: 100%;
+  display: block;
+  font-size: 0;
+}
+.img-item:hover{
+transition: transform 0.5s ease;
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+.formulario{
+    width: 60%;
+    padding: 30px;
+    border:1px solid #ccc;
+}
+.formulario p{
+    width: 80%;
+    font-size: 1,5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+.rodape {padding-top:32px;}
+.rodape > .container {background-color: black; height: 40px; text-align: center;}
+
+.rodape .footer-copyright{margin-bottom: 35px; text-align: end; color: #777;}
+
+.rodape ul{list-style-type: none; padding: 0; margin-bottom: 18px;}
+.rodape a{color: white; font-size: 18px;}
+.rodape li{display: inline-block; margin: 0px 15px; line-height: 2;}
